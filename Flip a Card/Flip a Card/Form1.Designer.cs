@@ -47,6 +47,7 @@ namespace Flip_a_Card
             this.cardFacePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cardFacePictureBox.TabIndex = 0;
             this.cardFacePictureBox.TabStop = false;
+            this.cardFacePictureBox.Visible = false;
             // 
             // cardBackPictureBox
             // 
@@ -57,6 +58,7 @@ namespace Flip_a_Card
             this.cardBackPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cardBackPictureBox.TabIndex = 1;
             this.cardBackPictureBox.TabStop = false;
+            this.cardBackPictureBox.Visible = false;
             // 
             // showBackButton
             // 
