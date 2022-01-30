@@ -1,7 +1,7 @@
 ﻿
 namespace Hello_World
 {
-    partial class Form1
+    partial class HelloWorldForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,33 @@ namespace Hello_World
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.messageButton = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // messageButton
+            // 
+            this.messageButton.Location = new System.Drawing.Point(100, 49);
+            this.messageButton.Name = "messageButton";
+            this.messageButton.Size = new System.Drawing.Size(81, 51);
+            this.messageButton.TabIndex = 0;
+            this.messageButton.Text = "Display Message";
+            this.messageButton.UseVisualStyleBackColor = true;
+            // 
+            // HelloWorldForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(294, 148);
+            this.Controls.Add(this.messageButton);
+            this.Name = "HelloWorldForm";
+            this.Text = "My First Program";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button messageButton;
     }
 }
 
