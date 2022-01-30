@@ -41,7 +41,7 @@ namespace Flip_a_Card
             // cardFacePictureBox
             // 
             this.cardFacePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("cardFacePictureBox.Image")));
-            this.cardFacePictureBox.Location = new System.Drawing.Point(326, 26);
+            this.cardFacePictureBox.Location = new System.Drawing.Point(38, 26);
             this.cardFacePictureBox.Name = "cardFacePictureBox";
             this.cardFacePictureBox.Size = new System.Drawing.Size(207, 320);
             this.cardFacePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -52,7 +52,7 @@ namespace Flip_a_Card
             // cardBackPictureBox
             // 
             this.cardBackPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("cardBackPictureBox.Image")));
-            this.cardBackPictureBox.Location = new System.Drawing.Point(21, 26);
+            this.cardBackPictureBox.Location = new System.Drawing.Point(38, 26);
             this.cardBackPictureBox.Name = "cardBackPictureBox";
             this.cardBackPictureBox.Size = new System.Drawing.Size(207, 320);
             this.cardBackPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -63,7 +63,7 @@ namespace Flip_a_Card
             // showBackButton
             // 
             this.showBackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.showBackButton.Location = new System.Drawing.Point(69, 370);
+            this.showBackButton.Location = new System.Drawing.Point(18, 370);
             this.showBackButton.Name = "showBackButton";
             this.showBackButton.Size = new System.Drawing.Size(91, 55);
             this.showBackButton.TabIndex = 2;
@@ -74,7 +74,7 @@ namespace Flip_a_Card
             // showFaceButton
             // 
             this.showFaceButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.showFaceButton.Location = new System.Drawing.Point(379, 370);
+            this.showFaceButton.Location = new System.Drawing.Point(167, 370);
             this.showFaceButton.Name = "showFaceButton";
             this.showFaceButton.Size = new System.Drawing.Size(91, 55);
             this.showFaceButton.TabIndex = 3;
@@ -86,7 +86,7 @@ namespace Flip_a_Card
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(553, 450);
+            this.ClientSize = new System.Drawing.Size(280, 450);
             this.Controls.Add(this.showFaceButton);
             this.Controls.Add(this.showBackButton);
             this.Controls.Add(this.cardBackPictureBox);

@@ -16,7 +16,12 @@ namespace Flip_a_Card
         {
             InitializeComponent();
         }
-
+        /* 
+         * cards are invisible when the program starts.
+         * functionality for the buttons is as follows:
+         * @param showBackButton when clicked shows the back of the ace of spades
+         * @param showFrontButton when clicked shows the front of the ace of spades
+         */
         private void showBackButton_Click(object sender, EventArgs e)
         {
             cardBackPictureBox.Visible = true;
