@@ -21,5 +21,10 @@ namespace Hello_World
         {
             MessageBox.Show("Hello World!");
         }
+
+        private void HelloWorldForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -34,9 +34,9 @@ namespace Hello_World
             // 
             // messageButton
             // 
-            this.messageButton.Location = new System.Drawing.Point(100, 49);
+            this.messageButton.Location = new System.Drawing.Point(59, 31);
             this.messageButton.Name = "messageButton";
-            this.messageButton.Size = new System.Drawing.Size(81, 51);
+            this.messageButton.Size = new System.Drawing.Size(67, 34);
             this.messageButton.TabIndex = 0;
             this.messageButton.Text = "Display Message";
             this.messageButton.UseVisualStyleBackColor = true;
@@ -46,10 +46,11 @@ namespace Hello_World
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(294, 148);
+            this.ClientSize = new System.Drawing.Size(187, 94);
             this.Controls.Add(this.messageButton);
             this.Name = "HelloWorldForm";
             this.Text = "My First Program";
+            this.Load += new System.EventHandler(this.HelloWorldForm_Load);
             this.ResumeLayout(false);
 
         }
