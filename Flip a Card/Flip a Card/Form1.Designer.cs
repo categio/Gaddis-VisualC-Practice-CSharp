@@ -34,6 +34,7 @@ namespace Flip_a_Card
             this.cardBackPictureBox = new System.Windows.Forms.PictureBox();
             this.showBackButton = new System.Windows.Forms.Button();
             this.showFaceButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.cardFacePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardBackPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -82,11 +83,23 @@ namespace Flip_a_Card
             this.showFaceButton.UseVisualStyleBackColor = true;
             this.showFaceButton.Click += new System.EventHandler(this.showFaceButton_Click);
             // 
+            // exitButton
+            // 
+            this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton.Location = new System.Drawing.Point(111, 436);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(53, 23);
+            this.exitButton.TabIndex = 4;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(280, 450);
+            this.ClientSize = new System.Drawing.Size(273, 471);
+            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.showFaceButton);
             this.Controls.Add(this.showBackButton);
             this.Controls.Add(this.cardBackPictureBox);
@@ -105,6 +118,7 @@ namespace Flip_a_Card
         private System.Windows.Forms.PictureBox cardBackPictureBox;
         private System.Windows.Forms.Button showBackButton;
         private System.Windows.Forms.Button showFaceButton;
+        private System.Windows.Forms.Button exitButton;
     }
 }
 

@@ -33,5 +33,10 @@ namespace Flip_a_Card
             cardBackPictureBox.Visible = false;
             cardFacePictureBox.Visible = true;
         }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
