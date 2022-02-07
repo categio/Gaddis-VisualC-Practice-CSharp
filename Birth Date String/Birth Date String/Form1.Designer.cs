@@ -89,6 +89,7 @@ namespace Birth_Date_String
             this.dayOfWeekTextbox.Name = "dayOfWeekTextbox";
             this.dayOfWeekTextbox.Size = new System.Drawing.Size(114, 25);
             this.dayOfWeekTextbox.TabIndex = 7;
+            this.dayOfWeekTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // monthTextBox
             // 
@@ -96,6 +97,7 @@ namespace Birth_Date_String
             this.monthTextBox.Name = "monthTextBox";
             this.monthTextBox.Size = new System.Drawing.Size(114, 25);
             this.monthTextBox.TabIndex = 8;
+            this.monthTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // dayOfMonthTextBox
             // 
@@ -103,6 +105,7 @@ namespace Birth_Date_String
             this.dayOfMonthTextBox.Name = "dayOfMonthTextBox";
             this.dayOfMonthTextBox.Size = new System.Drawing.Size(114, 25);
             this.dayOfMonthTextBox.TabIndex = 9;
+            this.dayOfMonthTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // yearTextBox
             // 
@@ -110,6 +113,7 @@ namespace Birth_Date_String
             this.yearTextBox.Name = "yearTextBox";
             this.yearTextBox.Size = new System.Drawing.Size(114, 25);
             this.yearTextBox.TabIndex = 10;
+            this.yearTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // dateOutputLabel
             // 
