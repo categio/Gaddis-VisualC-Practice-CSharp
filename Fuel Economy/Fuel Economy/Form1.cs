@@ -19,17 +19,26 @@ namespace Fuel_Economy
 
         private void calculateButton_Click(object sender, EventArgs e)
         {
-            double miles; //holds miles driven entered by user
-            double gallons; //holds gallons used entered by user
-            double mpg; //holds the mpg calculated
-            //retreive miles given and assign to the miles variable
-            miles = double.Parse(milesTextBox.Text);
-            //retrieve gallons used and assign to the gallons variable
-            gallons = double.Parse(gallonsTextBox.Text);
-            //calculate mpg with following formula: miles drive/gallons used
-            mpg = miles / gallons;
-            //display mpg calculated in teh mpgLabel control
-            mpgLabel.Text = mpg.ToString();
+            try //error handling device
+            {
+                double miles; //holds miles driven entered by user
+                double gallons; //holds gallons used entered by user
+                double mpg; //holds the mpg calculated
+                            //retreive miles given and assign to the miles variable
+                miles = double.Parse(milesTextBox.Text);
+                //retrieve gallons used and assign to the gallons variable
+                gallons = double.Parse(gallonsTextBox.Text);
+                //calculate mpg with following formula: miles drive/gallons used
+                mpg = miles / gallons;
+                //display mpg calculated in teh mpgLabel control
+                mpgLabel.Text = mpg.ToString();
+            }
+            catch
+            {
+                //display an error message
+                MessageBox.Show("Invalid Data Entered. "  +
+                    "Program can only accept numerical input.");
+            }
         }
 
         private void exitButton_Click(object sender, EventArgs e)
