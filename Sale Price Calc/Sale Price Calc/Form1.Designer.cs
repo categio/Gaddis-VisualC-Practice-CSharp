@@ -37,6 +37,7 @@ namespace Sale_Price_Calc
             this.twenty5CentPictureBox = new System.Windows.Forms.PictureBox();
             this.fiftyCentPictureBox = new System.Windows.Forms.PictureBox();
             this.exitButton = new System.Windows.Forms.Button();
+            this.clearButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.fivePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tenCentPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.twenty5CentPictureBox)).BeginInit();
@@ -100,6 +101,7 @@ namespace Sale_Price_Calc
             this.tenCentPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tenCentPictureBox.TabIndex = 4;
             this.tenCentPictureBox.TabStop = false;
+            this.tenCentPictureBox.Click += new System.EventHandler(this.tenCentPictureBox_Click);
             // 
             // twenty5CentPictureBox
             // 
@@ -111,6 +113,7 @@ namespace Sale_Price_Calc
             this.twenty5CentPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.twenty5CentPictureBox.TabIndex = 5;
             this.twenty5CentPictureBox.TabStop = false;
+            this.twenty5CentPictureBox.Click += new System.EventHandler(this.twenty5CentPictureBox_Click);
             // 
             // fiftyCentPictureBox
             // 
@@ -122,24 +125,42 @@ namespace Sale_Price_Calc
             this.fiftyCentPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fiftyCentPictureBox.TabIndex = 6;
             this.fiftyCentPictureBox.TabStop = false;
+            this.fiftyCentPictureBox.Click += new System.EventHandler(this.fiftyCentPictureBox_Click);
             // 
             // exitButton
             // 
+            this.exitButton.BackColor = System.Drawing.Color.White;
             this.exitButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.exitButton.FlatAppearance.BorderSize = 3;
             this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.exitButton.Location = new System.Drawing.Point(103, 216);
+            this.exitButton.Location = new System.Drawing.Point(36, 216);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(75, 23);
+            this.exitButton.Size = new System.Drawing.Size(194, 23);
             this.exitButton.TabIndex = 7;
-            this.exitButton.Text = "Exit";
-            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Text = "EXIT PROGRAM";
+            this.exitButton.UseVisualStyleBackColor = false;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            // 
+            // clearButton
+            // 
+            this.clearButton.BackColor = System.Drawing.Color.White;
+            this.clearButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.clearButton.FlatAppearance.BorderSize = 3;
+            this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.clearButton.Location = new System.Drawing.Point(189, 156);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(65, 23);
+            this.clearButton.TabIndex = 8;
+            this.clearButton.Text = "CLEAR";
+            this.clearButton.UseVisualStyleBackColor = false;
+            this.clearButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(264, 247);
+            this.Controls.Add(this.clearButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.fiftyCentPictureBox);
             this.Controls.Add(this.twenty5CentPictureBox);
@@ -172,6 +193,7 @@ namespace Sale_Price_Calc
         private System.Windows.Forms.PictureBox twenty5CentPictureBox;
         private System.Windows.Forms.PictureBox fiftyCentPictureBox;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Button clearButton;
     }
 }
 

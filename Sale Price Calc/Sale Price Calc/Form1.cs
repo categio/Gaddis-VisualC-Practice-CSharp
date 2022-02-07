@@ -31,5 +31,40 @@ namespace Sale_Price_Calc
             //display total in currency format
             totOutputLabel.Text = total.ToString("c");
         }
+
+        private void tenCentPictureBox_Click(object sender, EventArgs e)
+        {
+            //add val of .10 to total
+            total += TEN_CENTS_VAL;
+            //display total in currency format
+            totOutputLabel.Text = total.ToString("c");
+        }
+
+        private void twenty5CentPictureBox_Click(object sender, EventArgs e)
+        {
+            //add val of .25 to total
+            total += TWENTY_FIVE_CENTS_VAL;
+            //display total in currency format
+            totOutputLabel.Text = total.ToString("c");
+        }
+
+        private void fiftyCentPictureBox_Click(object sender, EventArgs e)
+        {
+            //add val of .50 to total
+            total += FIFTY_CENTS_VAL;
+            //display total in currency format
+            totOutputLabel.Text = total.ToString("c");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //clears the output box
+            totOutputLabel.Text = "";
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
