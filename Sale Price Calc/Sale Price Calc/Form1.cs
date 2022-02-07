@@ -60,6 +60,8 @@ namespace Sale_Price_Calc
         {
             //clears the output box
             totOutputLabel.Text = "";
+            //set focus back to the five cents box
+            fivePictureBox.Focus();
         }
 
         private void exitButton_Click(object sender, EventArgs e)

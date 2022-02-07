@@ -136,8 +136,8 @@ namespace Sale_Price_Calc
             this.exitButton.Location = new System.Drawing.Point(36, 216);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(194, 23);
-            this.exitButton.TabIndex = 7;
-            this.exitButton.Text = "EXIT PROGRAM";
+            this.exitButton.TabIndex = 4;
+            this.exitButton.Text = "E&XIT PROGRAM";
             this.exitButton.UseVisualStyleBackColor = false;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
@@ -150,7 +150,7 @@ namespace Sale_Price_Calc
             this.clearButton.Location = new System.Drawing.Point(189, 156);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(65, 23);
-            this.clearButton.TabIndex = 8;
+            this.clearButton.TabIndex = 3;
             this.clearButton.Text = "CLEAR";
             this.clearButton.UseVisualStyleBackColor = false;
             this.clearButton.Click += new System.EventHandler(this.button1_Click);
