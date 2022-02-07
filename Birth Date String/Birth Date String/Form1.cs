@@ -17,5 +17,35 @@ namespace Birth_Date_String
             InitializeComponent();
         }
 
+        private void showDateButton_Click(object sender, EventArgs e)
+        {
+            //declare string variable
+            string output;
+            //concatinate all inputs and build string
+            //held in @output param
+            output = dayOfWeekTextbox.Text + ", " +
+                monthTextBox.Text + " " +
+                dayOfMonthTextBox.Text + ", " +
+                yearTextBox.Text;
+            //display output string in label control
+            dateOutputLabel.Text = output;
+        }
+
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            //clears all text boxes
+            dayOfWeekTextbox.Text = "";
+            monthTextBox.Text = "";
+            dayOfMonthTextBox.Text = "";
+            yearTextBox.Text = "";
+            //clear dateOutputLabel control
+            dateOutputLabel.Text = "";
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            //close program/form
+            this.Close();
+        }
     }
 }
