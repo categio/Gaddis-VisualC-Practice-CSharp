@@ -38,8 +38,8 @@ namespace Test_Average
             this.test3TextBox = new System.Windows.Forms.TextBox();
             this.averageLabel = new System.Windows.Forms.Label();
             this.calculateButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.clearButton = new System.Windows.Forms.Button();
+            this.exitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // test1PromptLabel
@@ -138,34 +138,37 @@ namespace Test_Average
             this.calculateButton.TabIndex = 9;
             this.calculateButton.Text = "CALCULATE AVERAGE";
             this.calculateButton.UseVisualStyleBackColor = false;
+            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
             // 
-            // button1
+            // clearButton
             // 
-            this.button1.BackColor = System.Drawing.Color.Gainsboro;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.FlatAppearance.BorderSize = 3;
-            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(118, 203);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 56);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "CALCULATE AVERAGE";
-            this.button1.UseVisualStyleBackColor = false;
+            this.clearButton.BackColor = System.Drawing.Color.Gainsboro;
+            this.clearButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.clearButton.FlatAppearance.BorderSize = 3;
+            this.clearButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.clearButton.Location = new System.Drawing.Point(118, 203);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(94, 56);
+            this.clearButton.TabIndex = 10;
+            this.clearButton.Text = "CLEAR DATA";
+            this.clearButton.UseVisualStyleBackColor = false;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
-            // button2
+            // exitButton
             // 
-            this.button2.BackColor = System.Drawing.Color.Gainsboro;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button2.FlatAppearance.BorderSize = 3;
-            this.button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(218, 203);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 56);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "CALCULATE AVERAGE";
-            this.button2.UseVisualStyleBackColor = false;
+            this.exitButton.BackColor = System.Drawing.Color.Gainsboro;
+            this.exitButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.exitButton.FlatAppearance.BorderSize = 3;
+            this.exitButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.exitButton.Location = new System.Drawing.Point(218, 203);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(94, 56);
+            this.exitButton.TabIndex = 11;
+            this.exitButton.Text = "EXIT";
+            this.exitButton.UseVisualStyleBackColor = false;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // Form1
             // 
@@ -173,8 +176,8 @@ namespace Test_Average
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OldLace;
             this.ClientSize = new System.Drawing.Size(330, 286);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.clearButton);
             this.Controls.Add(this.calculateButton);
             this.Controls.Add(this.averageLabel);
             this.Controls.Add(this.test3TextBox);
@@ -205,8 +208,8 @@ namespace Test_Average
         private System.Windows.Forms.TextBox test3TextBox;
         private System.Windows.Forms.Label averageLabel;
         private System.Windows.Forms.Button calculateButton;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button clearButton;
+        private System.Windows.Forms.Button exitButton;
     }
 }
 
