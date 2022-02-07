@@ -32,8 +32,8 @@ namespace Sale_Price_Calculator
             this.originalPriceLabel = new System.Windows.Forms.Label();
             this.discPercentLabel = new System.Windows.Forms.Label();
             this.outputLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.originalPriceTextBox = new System.Windows.Forms.TextBox();
+            this.discountPercentTextBox = new System.Windows.Forms.TextBox();
             this.outputSalePriceLabel = new System.Windows.Forms.Label();
             this.calculateButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
@@ -76,25 +76,25 @@ namespace Sale_Price_Calculator
             this.outputLabel.Text = "CALCULATED SALE PRICE:";
             this.outputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // originalPriceTextBox
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Snow;
-            this.textBox1.ForeColor = System.Drawing.Color.Firebrick;
-            this.textBox1.Location = new System.Drawing.Point(274, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.originalPriceTextBox.BackColor = System.Drawing.Color.Snow;
+            this.originalPriceTextBox.ForeColor = System.Drawing.Color.Firebrick;
+            this.originalPriceTextBox.Location = new System.Drawing.Point(274, 28);
+            this.originalPriceTextBox.Name = "originalPriceTextBox";
+            this.originalPriceTextBox.Size = new System.Drawing.Size(100, 22);
+            this.originalPriceTextBox.TabIndex = 4;
+            this.originalPriceTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox2
+            // discountPercentTextBox
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Snow;
-            this.textBox2.ForeColor = System.Drawing.Color.Firebrick;
-            this.textBox2.Location = new System.Drawing.Point(274, 62);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 5;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.discountPercentTextBox.BackColor = System.Drawing.Color.Snow;
+            this.discountPercentTextBox.ForeColor = System.Drawing.Color.Firebrick;
+            this.discountPercentTextBox.Location = new System.Drawing.Point(274, 62);
+            this.discountPercentTextBox.Name = "discountPercentTextBox";
+            this.discountPercentTextBox.Size = new System.Drawing.Size(100, 22);
+            this.discountPercentTextBox.TabIndex = 5;
+            this.discountPercentTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // outputSalePriceLabel
             // 
@@ -114,6 +114,7 @@ namespace Sale_Price_Calculator
             this.calculateButton.TabIndex = 7;
             this.calculateButton.Text = "CALCULATE SALE PRICE";
             this.calculateButton.UseVisualStyleBackColor = false;
+            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // clearButton
             // 
@@ -124,6 +125,7 @@ namespace Sale_Price_Calculator
             this.clearButton.TabIndex = 8;
             this.clearButton.Text = "CLEAR DATA";
             this.clearButton.UseVisualStyleBackColor = false;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // exitButton
             // 
@@ -134,6 +136,7 @@ namespace Sale_Price_Calculator
             this.exitButton.TabIndex = 9;
             this.exitButton.Text = "EXIT CALCULATOR PROGRAM";
             this.exitButton.UseVisualStyleBackColor = false;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // Form1
             // 
@@ -144,8 +147,8 @@ namespace Sale_Price_Calculator
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.calculateButton);
             this.Controls.Add(this.outputSalePriceLabel);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.discountPercentTextBox);
+            this.Controls.Add(this.originalPriceTextBox);
             this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.discPercentLabel);
             this.Controls.Add(this.originalPriceLabel);
@@ -153,7 +156,7 @@ namespace Sale_Price_Calculator
             this.ForeColor = System.Drawing.Color.Firebrick;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Sale Price Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,8 +167,8 @@ namespace Sale_Price_Calculator
         private System.Windows.Forms.Label originalPriceLabel;
         private System.Windows.Forms.Label discPercentLabel;
         private System.Windows.Forms.Label outputLabel;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox originalPriceTextBox;
+        private System.Windows.Forms.TextBox discountPercentTextBox;
         private System.Windows.Forms.Label outputSalePriceLabel;
         private System.Windows.Forms.Button calculateButton;
         private System.Windows.Forms.Button clearButton;
