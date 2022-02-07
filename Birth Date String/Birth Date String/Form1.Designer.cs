@@ -170,7 +170,7 @@ namespace Birth_Date_String
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.PowderBlue;
+            this.BackColor = System.Drawing.Color.OldLace;
             this.ClientSize = new System.Drawing.Size(431, 311);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.clearButton);
@@ -185,7 +185,8 @@ namespace Birth_Date_String
             this.Controls.Add(this.monthLabel);
             this.Controls.Add(this.dayOfWeekLabel);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "Birth Date String Generator";
             this.TransparencyKey = System.Drawing.SystemColors.ControlText;
