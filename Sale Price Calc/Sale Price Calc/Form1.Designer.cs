@@ -31,7 +31,7 @@ namespace Sale_Price_Calc
         {
             this.instructionLabel = new System.Windows.Forms.Label();
             this.outputDescLabel = new System.Windows.Forms.Label();
-            this.totOuputLabel = new System.Windows.Forms.Label();
+            this.totOutputLabel = new System.Windows.Forms.Label();
             this.fivePictureBox = new System.Windows.Forms.PictureBox();
             this.tenCentPictureBox = new System.Windows.Forms.PictureBox();
             this.twenty5CentPictureBox = new System.Windows.Forms.PictureBox();
@@ -48,7 +48,7 @@ namespace Sale_Price_Calc
             this.instructionLabel.AutoSize = true;
             this.instructionLabel.BackColor = System.Drawing.Color.White;
             this.instructionLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.instructionLabel.Location = new System.Drawing.Point(80, 9);
+            this.instructionLabel.Location = new System.Drawing.Point(80, 12);
             this.instructionLabel.Name = "instructionLabel";
             this.instructionLabel.Size = new System.Drawing.Size(108, 19);
             this.instructionLabel.TabIndex = 0;
@@ -67,16 +67,16 @@ namespace Sale_Price_Calc
             this.outputDescLabel.Text = "TOTAL";
             this.outputDescLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // totOuputLabel
+            // totOutputLabel
             // 
-            this.totOuputLabel.BackColor = System.Drawing.Color.White;
-            this.totOuputLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.totOuputLabel.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.totOuputLabel.Location = new System.Drawing.Point(187, 124);
-            this.totOuputLabel.Name = "totOuputLabel";
-            this.totOuputLabel.Size = new System.Drawing.Size(68, 19);
-            this.totOuputLabel.TabIndex = 2;
-            this.totOuputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.totOutputLabel.BackColor = System.Drawing.Color.White;
+            this.totOutputLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.totOutputLabel.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.totOutputLabel.Location = new System.Drawing.Point(187, 124);
+            this.totOutputLabel.Name = "totOutputLabel";
+            this.totOutputLabel.Size = new System.Drawing.Size(68, 19);
+            this.totOutputLabel.TabIndex = 2;
+            this.totOutputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // fivePictureBox
             // 
@@ -88,6 +88,7 @@ namespace Sale_Price_Calc
             this.fivePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fivePictureBox.TabIndex = 3;
             this.fivePictureBox.TabStop = false;
+            this.fivePictureBox.Click += new System.EventHandler(this.fivePictureBox_Click);
             // 
             // tenCentPictureBox
             // 
@@ -144,14 +145,14 @@ namespace Sale_Price_Calc
             this.Controls.Add(this.twenty5CentPictureBox);
             this.Controls.Add(this.tenCentPictureBox);
             this.Controls.Add(this.fivePictureBox);
-            this.Controls.Add(this.totOuputLabel);
+            this.Controls.Add(this.totOutputLabel);
             this.Controls.Add(this.outputDescLabel);
             this.Controls.Add(this.instructionLabel);
             this.Font = new System.Drawing.Font("Franklin Gothic Demi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.Desktop;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Change Counter";
             ((System.ComponentModel.ISupportInitialize)(this.fivePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tenCentPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.twenty5CentPictureBox)).EndInit();
@@ -165,7 +166,7 @@ namespace Sale_Price_Calc
 
         private System.Windows.Forms.Label instructionLabel;
         private System.Windows.Forms.Label outputDescLabel;
-        private System.Windows.Forms.Label totOuputLabel;
+        private System.Windows.Forms.Label totOutputLabel;
         private System.Windows.Forms.PictureBox fivePictureBox;
         private System.Windows.Forms.PictureBox tenCentPictureBox;
         private System.Windows.Forms.PictureBox twenty5CentPictureBox;
