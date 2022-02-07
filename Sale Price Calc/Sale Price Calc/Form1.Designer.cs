@@ -151,7 +151,7 @@ namespace Sale_Price_Calc
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(65, 23);
             this.clearButton.TabIndex = 3;
-            this.clearButton.Text = "CLEAR";
+            this.clearButton.Text = "&CLEAR";
             this.clearButton.UseVisualStyleBackColor = false;
             this.clearButton.Click += new System.EventHandler(this.button1_Click);
             // 
